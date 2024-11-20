@@ -5,10 +5,10 @@ inputs:
     description: 'enable cache: true or false'
     required: false
     default: 'true'
-  outputs:
-    used-cache:
-      description: 'whether using cache or not'
-      vaule: ${{steps.install.outputs.cache}}
+outputs:
+  used-cache:
+    description: 'whether using cache or not'
+    vaule: ${{steps.install.outputs.cache}}
 runs:
   using: 'composite'
   steps:

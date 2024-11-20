@@ -8,7 +8,7 @@ inputs:
 outputs:
   used-cache:
     description: 'whether using cache or not'
-    vaule: ${{steps.install.outputs.cache}}
+    value: ${{steps.install.outputs.cache}}
 runs:
   using: 'composite'
   steps:

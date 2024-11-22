@@ -1,5 +1,5 @@
 import os
-import boto3  # AWS SDK for python
+import boto3 
 import mimetypes
 from botocore.config import Config
 

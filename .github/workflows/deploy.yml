@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-# composite github actions        
+# composite github actions     
       - name: load and cache deps
         id: cache-deps
         uses: ./.github/actions/cached-deps
@@ -80,6 +80,7 @@ jobs:
       - name: Deploy site
 #        run: echo "Deploying..."
         id: deploy
+# can deploy react package to AWS S3 by javascript or docker        
 #        uses: ./.github/actions/deploy-s3-javascript
         uses: ./.github/actions/deploy-s3-docker
         env: 

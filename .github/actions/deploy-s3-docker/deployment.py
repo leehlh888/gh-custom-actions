@@ -11,6 +11,8 @@ def run():
 
     configuration = Config(region_name=bucket_region)
 
+# boto3: AWS SDK for python
+# by default, lookup env variable AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY, to login AWS S3 storage
     s3_client = boto3.client('s3', config=configuration)
 
     for root, subdirs, files in os.walk(dist_folder):
